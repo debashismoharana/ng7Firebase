@@ -1,5 +1,13 @@
-<form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Favorite food" value="Sushi">
-    </mat-form-field>
-  </form>
+<form class="example-form margin-auto">
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="email" name="email" placeholder="Email">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="password" name="password" placeholder="Password" value="">
+  </mat-form-field>
+</form>
+<div class="text-center">
+    <button mat-raised-button class="margin-sm" color="primary" (click)="login()">Login!</button>
+    <button mat-raised-button class="margin-sm" color="primary" (click)="register()">Register!</button>
+</div>
